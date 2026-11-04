@@ -186,8 +186,8 @@
     transition: all 0.3s ease-in-out;
 }
 
-.footer-socials__link:hover svg path {
-    fill: #dc4b09;
+.footer-socials__link:hover {
+    transform: translateY(-4px);
 }
 
 .footer-bottom {
