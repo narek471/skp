@@ -596,7 +596,7 @@
     flex-direction: row;
     flex-shrink: 0;
     gap: 20px;
-    animation: partners-marquee 20s linear infinite;
+    animation: partners-marquee 30s linear infinite;
 }
 
 .partners-content:hover .partners-line {
@@ -614,6 +614,30 @@
     padding: 36px 24px;
     border: 1px solid #FFFFFF4D;
     border-radius: 24px;
+}
+
+.partners-block:after {
+    content: '';
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #050505;
+    filter: blur(1px);
+    pointer-events: none;
+}
+
+.partners-block:before {
+    content: '';
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: #050505;
+    filter: blur(1px);
+    pointer-events: none;
 }
 
 .partners-block img {
