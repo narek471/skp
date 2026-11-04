@@ -1,0 +1,10 @@
+@import "libs/swiper-bundle.min.css";
+@import "libs/aos.css";
+@import "libs/fancybox.css";
+@import "basic/fonts.css";
+@import "basic/main.css";
+@import "layouts/header.css";
+@import "layouts/consultation.css";
+@import "layouts/popup.css";
+@import "layouts/footer.css";
+@import "pages/home.css";
