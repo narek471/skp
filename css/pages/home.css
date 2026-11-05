@@ -281,6 +281,11 @@
     height: 24px;
     position: relative;
     display: flex;
+    transition: all 0.3s ease-in-out;
+}
+
+.directions-block:hover .directions-block__arrow {
+    transform: translate(6px, -6px);
 }
 
 .directions-block__arrow img,
@@ -320,7 +325,7 @@
     transition: all 0.3s ease-in-out;
 }
 
-.directions-block__link:hover::after {
+.directions-block:hover .directions-block__link:after {
     opacity: 0;
 }
 
@@ -840,7 +845,7 @@
     }
 
     .hero {
-        background-image: url("../../img/main/hero-bg-mobile.png");
+        background-image: url("../../img/main/hero-bg-mobile.jpg");
     }
 
     .hero-row {
