@@ -7,6 +7,7 @@
     position: relative;
     display: flex;
     flex-direction: column;
+    align-items: center;
     gap: 48px;
 }
 
@@ -26,7 +27,6 @@
     padding: 24px;
     background: linear-gradient(89.3deg, rgba(19, 22, 25, 0.5) 59.54%, rgba(162, 178, 192, 0.5) 272.74%);
     border: 1px solid #F6F7F94D;
-    backdrop-filter: blur(10px);
     border-radius: 24px;
 }
 
@@ -85,4 +85,40 @@
     align-items: flex-start;
     gap: 12px;
     padding-top: 32px;
+}
+
+/*******************************/
+
+/************* Media ***********/
+
+@media only screen and (max-width: 1024px) {
+
+    .faq {
+        padding: 60px 0 120px;
+    }
+
+    .faq-row {
+        gap: 32px;
+    }
+
+    .faq-block__title {
+        font-size: 20px;
+    }
+
+}
+
+@media only screen and (max-width: 480px) {
+
+    .faq {
+        padding: 50px 0 100px;
+    }
+
+    .faq-content {
+        gap: 10px;
+    }
+
+    .faq-block__text {
+        padding-top: 24px;
+    }
+
 }

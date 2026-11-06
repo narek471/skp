@@ -4,6 +4,7 @@
 @import "basic/fonts.css";
 @import "basic/main.css";
 @import "layouts/header.css";
+@import "layouts/breadcrumbs.css";
 @import "layouts/consultation.css";
 @import "layouts/faq.css";
 @import "layouts/popup.css";

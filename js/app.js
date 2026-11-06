@@ -10,7 +10,6 @@ window.addEventListener('load', AOS.refresh);
 
 const burgerButton = document.querySelector('[data-burger-button]');
 const navMenu = document.querySelector('[data-nav-menu]');
-const navMenuOverlay = document.querySelector('[data-nav-overlay]');
 
 if (burgerButton && navMenu) {
 
@@ -37,72 +36,38 @@ if (toggleButtons.length) {
     })
 }
 
-// Custom slider
+// Faq
 
-const customSlides = document.querySelectorAll('[data-custom-slide]');
+const faqGroups = document.querySelectorAll('[data-faq]');
 
-let customSlidesCurrentIndex = 0;
+faqGroups.forEach(group => {
+    const faqButtons = group.querySelectorAll('[data-faq-toggle]');
 
-function showSlide(index) {
-    customSlides.forEach((slide, i) => {
-        if (slide) {
-            slide.classList.remove('active');
-            if (i === index) {
-                slide.classList.add('active');
+    faqButtons.forEach(button => {
+        const currentItem = button.parentElement;
+        const currentPanel = currentItem.querySelector('[data-faq-panel]');
+
+        if (button.classList.contains('active')) {
+            currentPanel.style.maxHeight = currentPanel.scrollHeight + 'px';
+        }
+
+        button.addEventListener('click', () => {
+            const isActive = button.classList.contains('active');
+
+            faqButtons.forEach(groupButton => {
+                const groupPanel = groupButton.parentElement.querySelector('[data-faq-panel]');
+
+                groupButton.classList.remove('active');
+                groupPanel.classList.remove('active');
+                groupPanel.style.maxHeight = null;
+            });
+
+            if (!isActive) {
+                button.classList.add('active');
+                currentPanel.classList.add('active');
+                currentPanel.style.maxHeight = currentPanel.scrollHeight + 'px';
             }
-        }
-    });
-}
-
-function startSlider() {
-    if (customSlides.length) {
-        showSlide(customSlidesCurrentIndex);
-        setInterval(() => {
-            customSlidesCurrentIndex = (customSlidesCurrentIndex + 1) % customSlides.length;
-            showSlide(customSlidesCurrentIndex);
-        }, 3500);
-    }
-}
-
-startSlider();
-
-// Count numbers
-
-function animateNumber(number) {
-    const target = +number.getAttribute('data-target-count');
-    let count = 0;
-    const increment = target / 80;
-
-    const updateNumber = () => {
-        count += increment;
-        if (count < target) {
-            number.textContent = Math.ceil(count).toLocaleString('de-DE'); // 'de-DE' ставит точки
-            requestAnimationFrame(updateNumber);
-        } else {
-            number.textContent = target.toLocaleString('de-DE');
-        }
-    };
-
-    updateNumber();
-}
-
-function handleIntersection(entries, observer) {
-    entries.forEach(entry => {
-        if (entry.isIntersecting) {
-            animateNumber(entry.target);
-            observer.unobserve(entry.target);
-        }
-    });
-}
-
-document.addEventListener("DOMContentLoaded", () => {
-    const observer = new IntersectionObserver(handleIntersection, {
-        threshold: 0.9
-    });
-
-    const numbers = document.querySelectorAll('[data-target-count]');
-    numbers.forEach(number => {
-        observer.observe(number);
+        });
     });
 });
 
