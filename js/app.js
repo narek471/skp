@@ -66,6 +66,16 @@ faqGroups.forEach(group => {
                 button.classList.add('active');
                 currentPanel.classList.add('active');
                 currentPanel.style.maxHeight = currentPanel.scrollHeight + 'px';
+
+                setTimeout(() => {
+                    const panelTop = currentPanel.getBoundingClientRect().top + window.scrollY;
+                    const scrollPosition = panelTop - (window.innerHeight / 2);
+
+                    window.scrollTo({
+                        top: scrollPosition,
+                        behavior: 'smooth'
+                    });
+                }, 310);
             }
         });
     });
