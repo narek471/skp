@@ -69,7 +69,7 @@ faqGroups.forEach(group => {
 
                 setTimeout(() => {
                     const panelTop = currentPanel.getBoundingClientRect().top + window.scrollY;
-                    const scrollPosition = panelTop - (window.innerHeight / 2);
+                    const scrollPosition = panelTop - (window.innerHeight / 2) + 180;
 
                     window.scrollTo({
                         top: scrollPosition,
