@@ -908,6 +908,7 @@
         min-height: 260px;
     }
 
+    .h-projects-bottom__order,
     .h-projects-bottom__all {
         width: 100%;
     }

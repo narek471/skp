@@ -195,193 +195,22 @@ if (tabButtons.length && tabPanels.length) {
 
 // Slider
 
-let swiper1 = null;
-let swiper2 = null;
-
-function initStepsSlider() {
-
-    const isMobile1 = window.innerWidth < 768;
-    const swiperSlider1 = document.querySelector('.directions-content');
-
-    if (isMobile1 && swiperSlider1 && swiper1 === null) {
-        swiper1 = new Swiper('.directions-content', {
-            spaceBetween: 8,
-            slidesPerGroup: 1,
-            speed: 1500,
-            slidesPerView: 'auto',
-        });
-    } else if (!isMobile1 && swiperSlider1 && swiper1 !== null) {
-        swiper1.destroy(true, true);
-        swiper1 = null;
-    }
-
-
-    const isMobile2 = window.innerWidth < 480;
-    const swiperSlider2 = document.querySelector('.steps-slider');
-
-    if (isMobile2 && swiperSlider2 && swiper2 === null) {
-        swiper2 = new Swiper(swiperSlider2, {
-            spaceBetween: 16,
-            slidesPerGroup: 1,
-            speed: 1500,
-            slidesPerView: 1,
-            pagination: {
-                clickable: true,
-                el: '.steps-pagination',
-            },
-        });
-    } else if (!isMobile2 && swiperSlider2 && swiper2 !== null) {
-        swiper2.destroy(true, true);
-        swiper2 = null;
-    }
-
-}
-
-window.addEventListener('load', initStepsSlider);
-window.addEventListener('resize', initStepsSlider);
-
-const swiper3 = new Swiper('.clients-slider', {
-    slidesPerGroup: 1,
-    speed: 1500,
-    navigation: {
-        nextEl: '.clients-button__next',
-        prevEl: '.clients-button__prev',
-    },
-    breakpoints: {
-        320: {
-            slidesPerView: 2.5,
-            spaceBetween: 10,
-        },
-        480: {
-            slidesPerView: 3.5,
-            spaceBetween: 12,
-        },
-        768: {
-            slidesPerView: 3.5,
-            spaceBetween: 14,
-        },
-        992: {
-            slidesPerView: 5,
-            spaceBetween: 16,
-        }
-    },
-});
-
-const swiper4 = new Swiper('.reviews-slider', {
-    spaceBetween: 16,
-    slidesPerGroup: 1,
-    speed: 1500,
-    pagination: {
-        clickable: true,
-        el: '.reviews-pagination',
-    },
-    breakpoints: {
-        320: {
-            slidesPerView: 1,
-        },
-        480: {
-            slidesPerView: 'auto',
-        },
-        992: {
-            slidesPerView: 3,
-        }
-    }
-});
-
-const swiper5 = new Swiper('.news-slider', {
-    spaceBetween: 16,
-    slidesPerGroup: 1,
-    speed: 1500,
-    breakpoints: {
-        320: {
-            slidesPerView: 'auto',
-        },
-        992: {
-            slidesPerView: 4,
-        }
-    },
-});
-
-const swiper6 = new Swiper('.stages-slider', {
-    slidesPerGroup: 1,
-    speed: 1500,
-    breakpoints: {
-        320: {
-            spaceBetween: 10,
-            slidesPerView: 'auto',
-        },
-        1170: {
-            spaceBetween: 16,
-            slidesPerView: 4,
-        }
-    },
-});
-
-const swiper7 = new Swiper('.process-slider', {
-    slidesPerGroup: 1,
-    speed: 1500,
-    slidesPerView: 'auto',
-    spaceBetween: 16,
-});
-
-const swiper8 = new Swiper('.equipment-slider', {
+const swiper1 = new Swiper('.passes-slider', {
     slidesPerGroup: 1,
     speed: 1500,
     slidesPerView: 1,
-    spaceBetween: 24,
+    spaceBetween: 20,
     navigation: {
-        nextEl: '.equipment-button__next',
-        prevEl: '.equipment-button__prev',
+        nextEl: '.passes-slider__next',
+        prevEl: '.passes-slider__prev',
     },
     pagination: {
+        el: '.passes-pagination',
         clickable: true,
-        el: '.equipment-pagination',
     },
 });
 
-const swiper9 = new Swiper('.partners-slider', {
-    slidesPerGroup: 1,
-    speed: 1500,
-    navigation: {
-        nextEl: '.partners-controls__next',
-        prevEl: '.partners-controls__prev',
-    },
-    breakpoints: {
-        320: {
-            slidesPerView: 'auto',
-            spaceBetween: 24,
-        },
-        992: {
-            slidesPerView: 5,
-            spaceBetween: 32,
-        }
-    },
-});
 
-const swiper10 = new Swiper('.results-slider', {
-    slidesPerGroup: 1,
-    speed: 1500,
-    slidesPerView: 'auto',
-    spaceBetween: 32,
-    breakpoints: {
-        320: {
-            spaceBetween: 16,
-        },
-        992: {
-            spaceBetween: 32,
-        }
-    },
-});
-
-const swiper11 = new Swiper('.cases-navigation-slider', {
-    slidesPerGroup: 1,
-    speed: 1500,
-    slidesPerView: 'auto',
-    navigation: {
-        nextEl: '.cases-controls__next',
-        prevEl: '.cases-controls__prev',
-    },
-});
 
 // Fancybox
 
