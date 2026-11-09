@@ -56,6 +56,31 @@
     margin-top: 8px;
 }
 
+.agency-controls__link {
+    position: relative;
+    font-family: 'Golos Text', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 100%;
+    color: #dc4b09;
+    padding-bottom: 2px;
+}
+
+.agency-controls__link:before {
+    content: '';
+    width: 100%;
+    height: 1px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: #dc4b09;
+    transition: all 0.3s ease-in-out;
+}
+
+.agency-controls__link:hover::before {
+    opacity: 0;
+}
+
 .agency-info {
     width: 100%;
     position: relative;
@@ -516,12 +541,16 @@
         gap: 24px;
     }
 
+    .solutions-block {
+        padding: 24px 0;
+    }
+
     .solutions-block__icon {
         width: 30px;
     }
 
     .solutions-info {
-        padding: 32px 30px 0;
+        padding: 32px 0 0 30px;
     }
 
     .launching {

@@ -1,0 +1,488 @@
+.education .agency__title {
+    max-width: 600px;
+}
+
+.education .agency__text {
+    max-width: 760px;
+}
+
+.universities {
+    padding: 70px 0;
+}
+
+.universities-row {
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 48px;
+}
+
+.universities-top {
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+}
+
+.universities__text.section-text {
+    max-width: 685px;
+    text-align: center;
+    opacity: 1;
+}
+
+.universities-content {
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+    padding: 32px;
+    background-color: #22262c;
+    border-radius: 16px;
+}
+
+.universities-slider {
+    width: 100%;
+    position: relative;
+    display: flex;
+    overflow: hidden;
+}
+
+.universities-block {
+    height: auto;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+    padding: 24px;
+    background: linear-gradient(89.3deg, rgba(19, 22, 25, 0.5) 59.54%, rgba(162, 178, 192, 0.5) 272.74%);
+    border: 1px solid #F6F7F94D;
+    border-radius: 24px;
+    backdrop-filter: blur(5px)
+}
+
+.universities-block__icon {
+    height: 40px;
+    position: relative;
+    display: flex;
+    margin-bottom: 8px;
+}
+
+.universities-block__icon img {
+    height: 100%;
+}
+
+.universities-block__title {
+    width: 100%;
+    font-family: 'Manrope', sans-serif;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 120%;
+    letter-spacing: -0.02em;
+    color: #f6f7f9;
+    word-wrap: break-word;
+}
+
+.universities-controls {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 16px;
+}
+
+.universities-controls__button {
+    width: 16px;
+    height: 16px;
+    position: relative;
+    display: flex;
+}
+
+.universities-controls__button:hover {
+    opacity: 0.7;
+}
+
+.universities-controls__button svg {
+    width: 100%;
+    height: 100%;
+}
+
+.universities-controls__pagination {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 4px;
+}
+
+.universities-controls__pagination-current {
+    font-family: 'Manrope', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: -0.02em;
+    text-align: center;
+    color: #f6f7f9;
+}
+
+.universities-controls__pagination-total {
+    font-family: 'Manrope', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: -0.02em;
+    text-align: center;
+    color: rgba(246, 247, 249, 0.6);
+}
+
+.universities-controls__pagination-total:before {
+    content: '/';
+    margin-right: 4px;
+}
+
+.become {
+    padding: 70px 0;
+}
+
+.become-row {
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 48px;
+}
+
+.become-content {
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.become-block {
+    width: calc(100% / 3 - 40px / 3);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    padding: 8px;
+}
+
+.become-block__number {
+    width: 64px;
+    height: 64px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #22262c;
+    border-radius: 50%;
+    font-family: 'Manrope', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: -0.02em;
+    text-align: center;
+    color: #dc4b09;
+}
+
+.become-block__title {
+    font-family: 'Manrope', sans-serif;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 26px;
+    letter-spacing: -0.02em;
+    text-align: center;
+    color: #f6f7f9;
+}
+
+.become-block__text.section-text {
+    text-align: center;
+}
+
+.gallery {
+    padding: 70px 0;
+}
+
+.gallery-row {
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 48px;
+}
+
+.gallery-content {
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+}
+
+.gallery-slider {
+    width: 100%;
+    position: relative;
+    display: flex;
+}
+
+.gallery-block {
+    width: 50%;
+    height: 440px;
+    position: relative;
+    display: flex;
+    overflow: hidden;
+    border-radius: 24px;
+}
+
+.gallery-block:after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(255, 255, 255, 0.3);
+    pointer-events: none;
+    transition: all 0.3s ease-in-out;
+}
+
+.gallery-block.swiper-slide-active:after {
+    opacity: 0;
+}
+
+.gallery-block img,
+.gallery-block video {
+    width: 100%;
+    object-fit: cover;
+}
+
+.gallery-slider__button {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background: linear-gradient(89.3deg, rgba(19, 22, 25, 0.2) 59.54%, rgba(162, 178, 192, 0.2) 272.74%);
+    border: 1px solid #F6F7F94D;
+    z-index: 2;
+}
+
+.gallery-slider__button:hover {
+    opacity: .7;
+}
+
+.gallery-slider__prev {
+    left: 10px;
+}
+
+.gallery-slider__next {
+    right: 10px;
+}
+
+.communities {
+    padding: 70px 0;
+}
+
+.communities-row {
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    gap: 48px;
+}
+
+.communities-left {
+    width: 50%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+}
+
+.communities__title.section-title {
+    text-align: left;
+    margin-bottom: 8px;
+}
+
+.communities-right {
+    width: 50%;
+    position: relative;
+    display: flex;
+}
+
+.communities-right img {
+    width: 100%;
+    min-height: 240px;
+    object-fit: cover;
+    border-radius: 24px;
+}
+
+/*******************************/
+
+/************* Media ***********/
+
+@media only screen and (max-width: 1024px) {
+
+    .universities {
+        padding: 60px 0;
+    }
+
+    .universities-row {
+        gap: 32px;
+    }
+
+    .universities-top {
+        gap: 24px;
+    }
+
+    .universities-content {
+        gap: 24px;
+        padding: 24px;
+    }
+
+    .universities-block__icon {
+        height: 34px;
+    }
+
+    .universities-block__title {
+        font-size: 20px;
+    }
+
+    .become {
+        padding: 60px 0;
+    }
+
+    .become-row {
+        gap: 32px;
+    }
+
+    .become-block__title {
+        font-size: 20px;
+    }
+
+    .gallery {
+        padding: 60px 0;
+    }
+
+    .gallery-row {
+        gap: 32px;
+    }
+
+    .gallery-block {
+        width: 510px;
+        height: 340px;
+    }
+
+    .communities {
+        padding: 60px 0;
+    }
+
+    .communities-row {
+        gap: 24px;
+    }
+
+}
+
+@media only screen and (max-width: 768px) {
+
+    .become-block {
+        width: 100%;
+    }
+
+    .gallery-block {
+        width: 420px;
+        height: 270px;
+    }
+
+    .communities-row {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .communities-left {
+        width: 100%;
+    }
+
+    .communities-right {
+        width: 100%;
+    }
+
+}
+
+@media only screen and (max-width: 480px) {
+
+    .education .agency-controls__button {
+        width: calc(50% - 8px);
+        padding: 16px;
+    }
+
+    .universities {
+        padding: 50px 0;
+    }
+
+    .become {
+        padding: 50px 0;
+    }
+
+    .become-content {
+        justify-content: center;
+    }
+
+    .become-block {
+        max-width: 360px;
+        gap: 16px;
+    }
+
+    .become-block__number {
+        font-size: 14px;
+    }
+
+    .gallery {
+        padding: 50px 0;
+    }
+
+    .gallery-content {
+        gap: 20px;
+    }
+
+    .gallery-block {
+        width: 100%;
+        height: 240px;
+    }
+
+    .gallery-slider__button {
+        display: none;
+    }
+
+    .communities {
+        padding: 50px 0;
+    }
+
+    .communities-left {
+        gap: 16px;
+    }
+
+    .communities__title.section-title {
+        text-align: center;
+        align-self: center;
+    }
+
+}

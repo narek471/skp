@@ -200,6 +200,10 @@ const swiper1 = new Swiper('.passes-slider', {
     speed: 1500,
     slidesPerView: 1,
     spaceBetween: 20,
+    autoplay: {
+        delay: 3000,
+        disableOnInteraction: true,
+    },
     navigation: {
         nextEl: '.passes-slider__next',
         prevEl: '.passes-slider__prev',
@@ -210,6 +214,129 @@ const swiper1 = new Swiper('.passes-slider', {
     },
 });
 
+const universitiesCurrent = document.querySelector('[data-universities-pagination-current]');
+const universitiesTotal = document.querySelector('[data-universities-pagination-total]');
+
+const swiper2 = new Swiper('.universities-slider', {
+    slidesPerGroup: 1,
+    speed: 1500,
+    spaceBetween: 20,
+    navigation: {
+        nextEl: '.universities-controls__next',
+        prevEl: '.universities-controls__prev',
+    },
+    breakpoints: {
+        320: {
+            slidesPerView: 1,
+        },
+        768: {
+            slidesPerView: 2,
+        },
+        1024: {
+            slidesPerView: 3,
+        },
+    },
+    on: {
+        init: function () {
+            universitiesCurrent.textContent = String(this.realIndex + 1).padStart(2, '0');
+            universitiesTotal.textContent = String(this.slides.length).padStart(2, '0');
+        },
+
+        slideChange: function () {
+            universitiesCurrent.textContent = String(this.realIndex + 1).padStart(2, '0');
+        }
+    }
+});
+
+const swiper3 = new Swiper('.gallery_images .gallery-slider', {
+    slidesPerGroup: 1,
+    speed: 1500,
+    slidesPerView: 'auto',
+    centeredSlides: true,
+    initialSlide: 1,
+    autoplay: {
+        delay: 3000,
+        disableOnInteraction: true,
+    },
+    breakpoints: {
+        320: {
+            spaceBetween: 15,
+        },
+        1024: {
+            spaceBetween: 20,
+        },
+    },
+    navigation: {
+        nextEl: '.gallery_images .gallery-slider__next',
+        prevEl: '.gallery_images .gallery-slider__prev',
+    },
+    pagination: {
+        el: '.gallery_images .gallery-pagination',
+        clickable: true,
+    },
+});
+
+const swiper4 = new Swiper('.gallery_video .gallery-slider', {
+    slidesPerGroup: 1,
+    speed: 1500,
+    slidesPerView: 'auto',
+    centeredSlides: true,
+    initialSlide: 1,
+    autoplay: {
+        delay: 3000,
+        disableOnInteraction: true,
+    },
+    breakpoints: {
+        320: {
+            spaceBetween: 15,
+        },
+        1024: {
+            spaceBetween: 20,
+        },
+    },
+    navigation: {
+        nextEl: '.gallery_video .gallery-slider__next',
+        prevEl: '.gallery_video .gallery-slider__prev',
+    },
+    pagination: {
+        el: '.gallery_video .gallery-pagination',
+        clickable: true,
+    },
+});
+
+const reviewsCurrent = document.querySelector('[data-reviews-pagination-current]');
+const reviewsTotal = document.querySelector('[data-reviews-pagination-total]');
+
+const swiper5 = new Swiper('.reviews-slider', {
+    slidesPerGroup: 1,
+    speed: 1500,
+    spaceBetween: 20,
+    navigation: {
+        nextEl: '.reviews-controls__next',
+        prevEl: '.reviews-controls__prev',
+    },
+    breakpoints: {
+        320: {
+            slidesPerView: 1,
+        },
+        768: {
+            slidesPerView: 2,
+        },
+        1024: {
+            slidesPerView: 3,
+        },
+    },
+    on: {
+        init: function () {
+            reviewsCurrent.textContent = String(this.realIndex + 1).padStart(2, '0');
+            reviewsTotal.textContent = String(this.slides.length).padStart(2, '0');
+        },
+
+        slideChange: function () {
+            reviewsCurrent.textContent = String(this.realIndex + 1).padStart(2, '0');
+        }
+    }
+});
 
 
 // Fancybox
