@@ -1,0 +1,61 @@
+.notFound {
+    background-image: url("../../img/main/notFound-bg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+}
+
+.notFound-row {
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 120px 0;
+}
+
+.notFound-content {
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.notFound__number {
+    font-family: 'Manrope', sans-serif;
+    font-weight: 700;
+    font-size: 146px;
+    line-height: 120%;
+    letter-spacing: -0.03em;
+    text-align: center;
+    color: #dc4b09;
+}
+
+.notFound__title {
+    font-family: 'Manrope', sans-serif;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 120%;
+    letter-spacing: -0.02em;
+    color: #f6f7f9;
+    text-align: center;
+    margin-bottom: 48px;
+}
+
+/*******************************/
+
+/************* Media ***********/
+
+@media only screen and (max-width: 480px) {
+
+    .notFound__number {
+        font-size: 120px;
+    }
+
+    .notFound__title {
+        font-size: 20px;
+    }
+
+}

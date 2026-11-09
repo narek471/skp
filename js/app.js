@@ -99,28 +99,8 @@ openModalButtons.forEach(btn => {
                     }
                 }
             })
-
-            if (btn.getAttribute('data-modal-open') === 'review-modal') {
-
-                const modal = document.querySelector('[data-modal="review-modal"]');
-
-                const reviewBlock = btn.closest('.reviews-block');
-
-                if (reviewBlock && modal) {
-                    const authorName = reviewBlock.querySelector('.reviews-block__author')?.textContent.trim();
-                    const authorRole = reviewBlock.querySelector('.reviews-block__role')?.textContent.trim();
-                    const reviewText = reviewBlock.querySelector('.reviews-block__text')?.textContent.trim();
-                    const authorAddress = reviewBlock.querySelector('.reviews-block__address')?.textContent.trim();
-
-                    modal.querySelector('.review-block__company h3').textContent = authorName;
-                    modal.querySelector('.review-block__company p').textContent = authorRole;
-                    modal.querySelector('.review-block__info').textContent = reviewText;
-                    modal.querySelector('.review-block__city').textContent = authorAddress;
-                }
-
-            }
-
         })
+
     }
 })
 
@@ -148,6 +128,48 @@ document.addEventListener('click', (ev) => {
         }
     })
 })
+
+// Dynamic Reviews Modal
+
+const reviewsBlocks = document.querySelectorAll('[data-reviews-block]');
+
+const reviewsModalAvatar = document.querySelector('[data-reviews-avatar-modal] img');
+const reviewsModalName = document.querySelector('[data-reviews-name-modal]');
+const reviewsModalRole = document.querySelector('[data-reviews-role-modal]');
+const reviewsModalText = document.querySelector('[data-reviews-text-modal]');
+
+if(reviewsBlocks.length) {
+    reviewsBlocks.forEach(block => {
+        const reviewsButton = block.querySelector('[data-modal-open="review-modal"]');
+
+        if (!reviewsButton) return;
+
+        reviewsButton.addEventListener('click', () => {
+            const reviewsAvatar = block.querySelector('[data-reviews-avatar] img');
+            const reviewsName = block.querySelector('[data-reviews-name]');
+            const reviewsRole = block.querySelector('[data-reviews-role]');
+            const reviewsText = block.querySelector('[data-reviews-text]');
+
+
+            if (reviewsAvatar && reviewsModalAvatar) {
+                reviewsModalAvatar.src = reviewsAvatar.src;
+                reviewsModalAvatar.alt = reviewsAvatar.alt;
+            }
+
+            if (reviewsName && reviewsModalName) {
+                reviewsModalName.textContent = reviewsName.textContent.trim();
+            }
+
+            if (reviewsRole && reviewsModalRole) {
+                reviewsModalRole.textContent = reviewsRole.textContent.trim();
+            }
+
+            if (reviewsText && reviewsModalText) {
+                reviewsModalText.textContent = reviewsText.textContent.trim();
+            }
+        });
+    });
+}
 
 // Input mask
 

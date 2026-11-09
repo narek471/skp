@@ -1,0 +1,118 @@
+.privacy {
+    padding: 130px 0;
+}
+
+.privacy-row {
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 48px;
+}
+
+.privacy-body {
+    width: 100%;
+    max-width: 900px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+}
+
+.privacy-content {
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.privacy-content h2:first-child {
+    margin-top: 0;
+}
+
+.privacy-content h2 {
+    font-family: 'Golos Text', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 130%;
+    color: rgba(246, 247, 249, 0.7);
+    margin-bottom: 24px;
+    margin-top: 24px;
+}
+
+.privacy-content p {
+    font-family: 'Golos Text', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 130%;
+    color: rgba(246, 247, 249, 0.7);
+}
+
+.privacy-content p a,
+.privacy-content li a {
+    color: rgba(246, 247, 249, 0.7);
+}
+
+.privacy-content a:hover {
+    opacity: .7;
+}
+
+.privacy-content ul {
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    list-style-type: disc;
+    padding-left: 15px;
+}
+
+.privacy-content li {
+    font-family: 'Golos Text', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 130%;
+    color: rgba(246, 247, 249, 0.7);
+}
+
+/*******************************/
+
+/************* Media ***********/
+
+@media only screen and (max-width: 1024px) {
+
+    .privacy {
+        padding: 120px 0;
+    }
+
+    .privacy-row {
+        gap: 32px;
+    }
+
+    .privacy-body {
+        gap: 24px;
+    }
+
+    .privacy-content h2 {
+        margin-bottom: 20px;
+        margin-top: 20px;
+    }
+
+    .privacy-content h2,
+    .privacy-content p,
+    .privacy-content li {
+        font-size: 14px;
+    }
+
+}
+
+@media only screen and (max-width: 480px) {
+
+    .privacy {
+        padding: 90px 0 100px;
+    }
+
+}
