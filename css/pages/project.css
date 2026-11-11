@@ -400,6 +400,7 @@
     height: 16px;
     position: relative;
     display: flex;
+    flex-shrink: 0;
 }
 
 .reviews-controls__button:hover {

@@ -102,6 +102,7 @@
     height: 16px;
     position: relative;
     display: flex;
+    flex-shrink: 0;
 }
 
 .universities-controls__button:hover {

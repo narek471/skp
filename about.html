@@ -918,105 +918,30 @@
     <div class="modal-bg review-modal" data-modal="review-modal">
         <div class="review-content">
             <button class="reviews-modal__close modal-close" data-modal-close="review-modal">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                    <rect x="4" y="18.1421" width="20" height="2" transform="rotate(-45 4 18.1421)" fill="#1F41FF"/>
-                    <rect x="5.63574" y="4.22192" width="20" height="2" transform="rotate(45 5.63574 4.22192)"
-                          fill="#1F41FF"/>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                    <path d="M9.4 8L15.7 1.7C16.1 1.3 16.1 0.7 15.7 0.3C15.3 -0.1 14.7 -0.1 14.3 0.3L8 6.6L1.7 0.3C1.3 -0.1 0.7 -0.1 0.3 0.3C-0.0999998 0.7 -0.0999998 1.3 0.3 1.7L6.6 8L0.3 14.3C0.1 14.5 0 14.7 0 15C0 15.6 0.4 16 1 16C1.3 16 1.5 15.9 1.7 15.7L8 9.4L14.3 15.7C14.5 15.9 14.7 16 15 16C15.3 16 15.5 15.9 15.7 15.7C16.1 15.3 16.1 14.7 15.7 14.3L9.4 8Z" fill="#DC4B09"/>
                 </svg>
             </button>
-            <div class="review-block__icon">
-                <img src="./img/icons/user.svg" alt="">
-            </div>
-            <div class="review-block__company">
-                <h3>
-                    Андрей Колосов
-                </h3>
-                <p>
-                    Главный инженер строительной компании «РегионСтрой»
-                </p>
-            </div>
-            <p class="review-block__info">
-                Сотрудничество с компанией «ГлавГеоПроект» оставило исключительно положительное впечатление. Работы по
-                инженерным изысканиям были выполнены качественно и в чётко оговорённые сроки. Сотрудничество с компанией
-                «ГлавГеоПроект» оставило исключительно положительное впечатление. Работы по инженерным изысканиям были
-                выполнены качественно и в чётко оговорённые сроки.
-            </p>
-            <p class="review-block__city">
-                г. Екатеринбург
-            </p>
-        </div>
-    </div>
-    <div class="modal-bg feedback-modal" data-modal="feedback-modal">
-        <div class="feedback-content">
-            <button class="feedback-modal__close modal-close" data-modal-close="feedback-modal">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                    <rect x="4" y="18.1421" width="20" height="2" transform="rotate(-45 4 18.1421)" fill="#1F41FF"/>
-                    <rect x="5.63574" y="4.22192" width="20" height="2" transform="rotate(45 5.63574 4.22192)"
-                          fill="#1F41FF"/>
-                </svg>
-            </button>
-            <div class="feedback-top">
-                <h2 class="feedback-top__title">
-                    Оставьте ваши контакты
-                </h2>
-                <p class="feedback-top__text">
-                    Специалист нашей компании свяжется с вами в ближайшее время и уточнит все детали проекта.
-                </p>
-            </div>
-            <div class="feedback-form">
-                <form action="#">
-                    <label class="form-input form-input__name">
-                                    <span class="form-input__text">
-                                        Ваше имя
-                                    </span>
-                        <input type="text">
-                    </label>
-                    <label class="form-input form-input__phone">
-                                    <span class="form-input__flag">
-                                        <img src="./img/icons/ru-flag.svg" alt="">
-                                    </span>
-                        <input type="text" placeholder="+7  ( _ _ _ )  _ _ _  _ _  _ _" data-input-tel>
-                    </label>
-                    <button class="button-transparent">
-                        <span class="button-transparent__arrow">
-                                    <svg width="12" height="10" viewBox="0 0 12 10" fill="none"
-                                         xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M11.9024 4.80372L6.90236 0.637055C6.80664 0.557836 6.66439 0.533695 6.53907 0.57682C6.41439 0.619685 6.33336 0.721143 6.33336 0.833435V1.38898C6.33336 1.46276 6.36851 1.5333 6.43101 1.58539L9.86201 4.44455H1C0.81575 4.44458 0.666656 4.5688 0.666656 4.72234V5.27789C0.666656 5.43143 0.81575 5.55567 1 5.55567H9.86201L6.43101 8.41484C6.36851 8.46692 6.33336 8.53744 6.33336 8.61125V9.16679C6.33336 9.27911 6.41442 9.38054 6.53907 9.42341C6.58042 9.43778 6.6237 9.44458 6.66667 9.44458C6.75326 9.44458 6.83854 9.41638 6.90236 9.3632L11.9024 5.19653C12.0326 5.08802 12.0326 4.91224 11.9024 4.80372Z"
-                                              fill="#1F41FF"/>
-                                    </svg>
-                                </span>
-                    </button>
-                    <label class="form-checkbox">
-                        <input type="checkbox">
-                        <p class="form-checkbox__text">
-                            Я согласен с <a href="./privacy.html" target="_blank">политикой
-                            конфиденциальности данных</a>
+            <div class="reviews-block">
+                <div class="reviews-block__head">
+                    <div class="reviews-block__avatar" data-reviews-avatar-modal>
+                        <img src="./img/main/reviews01.jpg" alt="">
+                    </div>
+                    <div class="reviews-block__author">
+                        <p class="reviews-block__name" data-reviews-name-modal>
+                            Иванова Анна
                         </p>
-                    </label>
-                </form>
+                        <p class="reviews-block__role" data-reviews-role-modal>
+                            Участник
+                        </p>
+                    </div>
+                </div>
+                <div class="reviews-block__content">
+                    <p class="reviews-block__text section-text" data-reviews-text-modal>
+                        Корпоративная бизнес-игра с собственной механикой и сценарием, который адаптируется под конкретный запрос. Проводим её для сотрудников компаний и для студентов. Корпоративная бизнес-игра с собственной механикой и сценарием, который адаптируется под конкретный запрос. Проводим её для сотрудников компаний и для студентов. Корпоративная бизнес-игра с собственной механикой и сценарием, который адаптируется под конкретный запрос. Проводим её для сотрудников компаний и для студентов. Корпоративная бизнес-игра с собственной механикой и сценарием, который адаптируется под конкретный запрос. Проводим её для сотрудников компаний и для студентов.
+                    </p>
+                </div>
             </div>
-        </div>
-    </div>
-    <!--    После успешной отправки формы добавь класс "fade-out" к блоку "thanks-modal",-->
-    <!--    чтобы он автоматически исчез через 10 секунд-->
-    <div class="modal-bg thanks-modal" data-modal="thanks-modal">
-        <div class="thanks-content">
-            <button class="thanks-modal__close modal-close" data-modal-close="thanks-modal">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                    <rect x="4" y="18.1421" width="20" height="2" transform="rotate(-45 4 18.1421)" fill="#1F41FF"/>
-                    <rect x="5.63574" y="4.22192" width="20" height="2" transform="rotate(45 5.63574 4.22192)"
-                          fill="#1F41FF"/>
-                </svg>
-            </button>
-            <div class="thanks__logo">
-                <img src="./img/main/logo.svg" alt="">
-            </div>
-            <h2 class="thanks__title">
-                Спасибо что доверились компании главгеотех
-            </h2>
-            <p class="thanks__text">
-                Наш специалист скоро с вами свяжется
-            </p>
         </div>
     </div>
 </div>
