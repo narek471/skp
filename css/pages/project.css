@@ -33,7 +33,7 @@
 }
 
 .project__text.section-text {
-    opacity: 1;
+    color: #f6f7f9;
 }
 
 .project-bottom {
@@ -252,7 +252,7 @@
 }
 
 .description-info__text_white.section-text {
-    opacity: 0.8;
+    color: rgba(246, 247, 249, 0.8);
 }
 
 .reviews {

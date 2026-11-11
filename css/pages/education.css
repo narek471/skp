@@ -31,7 +31,7 @@
 .universities__text.section-text {
     max-width: 685px;
     text-align: center;
-    opacity: 1;
+    color: #f6f7f9;
 }
 
 .universities-content {
@@ -295,6 +295,30 @@
     right: 10px;
 }
 
+.gallery-video-row {
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 48px;
+}
+
+.gallery-video__item {
+    width: 100%;
+    max-width: 900px;
+    position: relative;
+    display: flex;
+    border-radius: 24px;
+    overflow: hidden;
+}
+
+.gallery-video__item video {
+    width: 100%;
+    min-height: 230px;
+    object-fit: cover;
+}
+
 .communities {
     padding: 70px 0;
 }
@@ -391,6 +415,10 @@
         height: 340px;
     }
 
+    .gallery-video-row {
+        gap: 32px;
+    }
+
     .communities {
         padding: 60px 0;
     }
@@ -470,6 +498,10 @@
 
     .gallery-slider__button {
         display: none;
+    }
+
+    .gallery-video-row {
+        gap: 24px;
     }
 
     .communities {

@@ -1,0 +1,847 @@
+.about {
+    background-image: url("../../img/main/about-bg.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.about-row {
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 48px;
+    padding: 140px 0 160px;
+}
+
+.about-body {
+    width: 100%;
+    max-width: 970px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+}
+
+.about__text {
+    max-width: 810px;
+}
+
+.about__text.section-text {
+    color: #f6f7f9;
+    text-align: center;
+}
+
+.about-bottom {
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 24px;
+    margin-top: 16px;
+}
+
+.history {
+    padding: 140px 0 70px;
+}
+
+.history-row {
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 48px;
+}
+
+.history-content {
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+}
+
+.history-block {
+    width: calc(50% - 12px);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+}
+
+.about-page .directions-block {
+    min-height: 390px;
+}
+
+.team {
+    padding: 70px 0;
+}
+
+.team-row {
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 48px;
+}
+
+.team-content {
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 64px;
+}
+
+.team-part {
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+}
+
+.team-part__title {
+    font-family: 'Manrope', sans-serif;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 120%;
+    letter-spacing: -2%;
+    color: #f6f7f9;
+}
+
+.team-list {
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px 20px;
+}
+
+.team-block {
+    width: calc(100% / 3 - 40px / 3);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    border: 1px solid #F6F7F94D;
+    border-radius: 24px;
+    background: linear-gradient(89.3deg, rgba(19, 22, 25, 0.5) 59.54%, rgba(162, 178, 192, 0.5) 272.74%);
+    padding: 32px;
+}
+
+.team-block__avatar {
+    width: 120px;
+    height: 120px;
+    position: relative;
+    display: flex;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.team-block__avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.team-block__content {
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
+
+.team-block__name {
+    font-family: 'Manrope', sans-serif;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 120%;
+    letter-spacing: -0.02em;
+    text-align: center;
+    color: #f6f7f9;
+}
+
+.team-block__role {
+    font-family: 'Golos Text', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 100%;
+    text-align: center;
+    color: #dc4b09;
+}
+
+.team-block__info {
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    margin-top: 4px;
+}
+
+.team-block__info-title {
+    font-family: 'Golos Text', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 130%;
+    color: rgba(246, 247, 249, 0.6);
+}
+
+.team-block__info-email {
+    font-family: 'Golos Text', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 130%;
+    color: #f6f7f9;
+}
+
+.team-block__info-email:hover {
+    opacity: .8;
+}
+
+.signature {
+    padding: 70px 0;
+}
+
+.signature-row {
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+}
+
+.signature-content {
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.signature-block {
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 32px 0;
+    border-top: 1px solid #A2B2C0;
+    border-bottom: 1px solid #A2B2C0;
+}
+
+.signature-block__panel {
+    width: 100%;
+    max-height: 0;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+}
+
+.signature-block__info {
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    gap: 48px;
+    padding: 48px 0 0;
+}
+
+.signature-item {
+    width: calc(50% - 24px);
+    max-width: 450px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+}
+
+.signature-item__img {
+    width: 100%;
+    height: 170px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.signature-item__img img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.signature-item__list {
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px 24px;
+}
+
+.signature-item__list a {
+    font-family: 'Golos Text', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 100%;
+    text-align: center;
+    text-decoration: underline;
+    color: #dc4b09;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 12px;
+}
+
+.signature-item__list a:hover {
+    opacity: .7;
+}
+
+.signature-item__list a:before {
+    content: '';
+    width: 24px;
+    height: 24px;
+    position: relative;
+    display: flex;
+    flex-shrink: 0;
+    background-image: url("../../img/icons/file.svg");
+    background-size: 100% 100%;
+}
+
+.signature-group {
+    width: 100%;
+    max-width: 670px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+}
+
+.signature-group img {
+    width: 100%;
+}
+
+.details {
+    padding: 70px 0;
+}
+
+.details-row {
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 110px;
+}
+
+.details__title.section-title {
+    text-align: left;
+}
+
+.details-content {
+    flex: 1 1 auto;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.details-block {
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 100px;
+    padding: 16px 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.details-block:last-child {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.details-block__title {
+    width: 250px;
+    font-family: 'Golos Text', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 130%;
+    color: rgba(246, 247, 249, 0.6);
+    white-space: nowrap;
+    flex-shrink: 0;
+}
+
+.details-block__text {
+    font-family: 'Golos Text', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 130%;
+    color: #f6f7f9;
+}
+
+.details-block__link {
+    font-family: 'Golos Text', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 130%;
+    color: #f6f7f9;
+}
+
+.details-block__link:hover {
+    color: #dc4b09;
+}
+
+.contacts {
+    padding: 70px 0 140px;
+}
+
+.contacts-row {
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 48px;
+}
+
+.contacts__title.section-title {
+    text-align: left;
+}
+
+.contacts-content {
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.contacts-main {
+    width: calc(50% - 10px);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 32px;
+    padding: 32px;
+    border: 1px solid #FFFFFF33;
+    border-radius: 24px;
+}
+
+.contacts-block {
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 48px;
+}
+
+.contacts-block:last-child {
+    margin-top: auto;
+}
+
+.contacts-block__title {
+    width: 120px;
+    font-family: 'Golos Text', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 130%;
+    color: rgba(246, 247, 249, 0.6);
+    white-space: nowrap;
+    flex-shrink: 0;
+}
+
+.contacts-block__link {
+    font-family: 'Manrope', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 120%;
+    letter-spacing: -0.02em;
+    color: #f6f7f9;
+}
+
+.contacts-block__link:hover {
+    color: #dc4b09;
+}
+
+.contacts-block__address {
+    font-family: 'Manrope', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 120%;
+    letter-spacing: -0.02em;
+    color: #f6f7f9;
+}
+
+.contacts-block__address-info {
+    font-family: 'Golos Text', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 130%;
+    color: #f6f7f9;
+    display: block;
+}
+
+.contacts-map {
+    width: calc(50% - 10px);
+    min-height: 400px;
+    position: relative;
+    display: flex;
+    overflow: hidden;
+    border-radius: 24px;
+}
+
+.contacts-map iframe {
+    width: 100%;
+    height: 100%;
+}
+
+.contacts-block__socials {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 6px;
+}
+
+/*******************************/
+
+/************* Media ***********/
+
+@media only screen and (max-width: 1200px) {
+
+    .team-block__info-title {
+        font-size: 14px;
+    }
+
+    .team-block__info-email {
+        font-size: 14px;
+    }
+
+    .details-row {
+        gap: 60px;
+    }
+
+}
+
+@media only screen and (max-width: 1024px) {
+
+    .about-row {
+        gap: 32px;
+        padding: 120px 0;
+    }
+
+    .about-body {
+        gap: 24px;
+    }
+
+    .history {
+        padding: 120px 0 60px;
+    }
+
+    .history-row {
+        gap: 32px;
+    }
+
+    .team {
+        padding: 60px 0;
+    }
+
+    .team-row {
+        gap: 32px;
+    }
+
+    .team-part__title {
+        font-size: 24px;
+    }
+
+    .team-block {
+        width: calc(50% - 10px);
+    }
+
+    .team-block__name {
+        font-size: 20px;
+    }
+
+    .team-block__role {
+        font-size: 14px;
+    }
+
+    .signature {
+        padding: 60px 0;
+    }
+
+    .signature-row {
+        gap: 32px;
+    }
+
+    .signature-item__list a {
+        font-size: 12px;
+    }
+
+    .signature-item__list a:before {
+        width: 20px;
+        height: 20px;
+    }
+
+    .signature-group {
+        gap: 24px;
+    }
+
+    .details {
+        padding: 60px 0;
+    }
+
+    .details-row {
+        flex-direction: column;
+        gap: 32px;
+    }
+
+    .details-content {
+        width: 100%;
+    }
+
+    .details-block__title {
+        font-size: 14px;
+    }
+
+    .details-block__text {
+        font-size: 14px;
+    }
+
+    .details-block__link {
+        font-size: 14px;
+    }
+
+    .contacts {
+        padding: 60px 0 120px;
+    }
+
+    .contacts-row {
+        gap: 32px;
+    }
+
+    .contacts-content {
+        flex-direction: column;
+    }
+
+    .contacts-main {
+        width: 100%;
+    }
+
+    .contacts-map {
+        width: 100%;
+        height: 400px;
+    }
+
+}
+
+@media only screen and (max-width: 768px) {
+
+    .history-block {
+        width: 100%;
+    }
+
+    .about-page .directions-block {
+        min-height: 280px;
+    }
+
+    .team-block {
+        padding: 32px 16px;
+    }
+
+    .team-block__info {
+        gap: 4px;
+    }
+
+    .team-block__info-title {
+        font-size: 12px;
+    }
+
+    .team-block__info-email {
+        font-size: 12px;
+    }
+
+    .signature-block__info {
+        gap: 48px;
+    }
+
+    .signature-item {
+        width: 100%;
+    }
+
+    .signature-item__img {
+        height: unset;
+    }
+
+    .details-block {
+        flex-direction: column;
+        gap: 4px;
+    }
+
+    .details-block__title {
+        width: unset;
+    }
+
+    .contacts-block {
+        gap: 24px;
+    }
+
+    .contacts-block__link {
+        font-size: 18px;
+    }
+
+    .contacts-block__address {
+        font-size: 18px;
+    }
+
+    .contacts-block__address-info {
+        font-size: 14px;
+    }
+
+}
+
+@media only screen and (max-width: 600px) {
+
+    .team-block {
+        width: 100%;
+    }
+
+}
+
+@media only screen and (max-width: 480px) {
+
+    .about-row {
+        padding: 90px 0 100px;
+    }
+
+    .about-bottom {
+        gap: 12px;
+    }
+
+    .about-bottom__button {
+        width: 100%;
+        max-width: 280px;
+    }
+
+    .history {
+        padding: 80px 0 50px;
+    }
+
+    .history-row {
+        gap: 24px;
+    }
+
+    .team {
+        padding: 50px 0;
+    }
+
+    .team-row {
+        gap: 24px;
+    }
+
+    .team-content {
+        gap: 48px;
+    }
+
+    .team-part {
+        gap: 24px;
+    }
+
+    .team-list {
+        gap: 16px;
+    }
+
+    .team-block__avatar {
+        width: 100px;
+        height: 100px;
+    }
+
+    .signature {
+        padding: 50px 0;
+    }
+
+    .signature-block {
+        padding: 24px 0;
+    }
+
+    .signature-block__info {
+        padding: 24px 0 0;
+    }
+
+    .signature-item__img {
+        width: 90%;
+    }
+
+    .signature-item__list {
+        gap: 12px;
+    }
+
+    .signature-item__list a {
+        gap: 6px;
+    }
+
+    .signature-group {
+        gap: 16px;
+    }
+
+    .details {
+        padding: 50px 0;
+    }
+
+    .details-row {
+        gap: 24px;
+    }
+
+    .contacts {
+        padding: 50px 0 100px;
+    }
+
+    .contacts-row {
+        gap: 24px;
+    }
+
+    .contacts-main {
+        gap: 24px;
+        padding: 24px;
+    }
+
+    .contacts-block {
+        flex-direction: column;
+        gap: 4px;
+    }
+
+    .contacts-block__title {
+        width: 100%;
+        font-size: 14px;
+    }
+
+    .contacts-block__link {
+        font-size: 16px;
+    }
+
+    .contacts-block__address {
+        font-size: 16px;
+    }
+
+}

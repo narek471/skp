@@ -40,46 +40,48 @@ if (toggleButtons.length) {
 
 const faqGroups = document.querySelectorAll('[data-faq]');
 
-faqGroups.forEach(group => {
-    const faqButtons = group.querySelectorAll('[data-faq-toggle]');
+if(faqGroups.length) {
+    faqGroups.forEach(group => {
+        const faqButtons = group.querySelectorAll('[data-faq-toggle]');
 
-    faqButtons.forEach(button => {
-        const currentItem = button.parentElement;
-        const currentPanel = currentItem.querySelector('[data-faq-panel]');
+        faqButtons.forEach(button => {
+            const currentItem = button.parentElement;
+            const currentPanel = currentItem.querySelector('[data-faq-panel]');
 
-        if (button.classList.contains('active')) {
-            currentPanel.style.maxHeight = currentPanel.scrollHeight + 'px';
-        }
-
-        button.addEventListener('click', () => {
-            const isActive = button.classList.contains('active');
-
-            faqButtons.forEach(groupButton => {
-                const groupPanel = groupButton.parentElement.querySelector('[data-faq-panel]');
-
-                groupButton.classList.remove('active');
-                groupPanel.classList.remove('active');
-                groupPanel.style.maxHeight = null;
-            });
-
-            if (!isActive) {
-                button.classList.add('active');
-                currentPanel.classList.add('active');
+            if (button.classList.contains('active')) {
                 currentPanel.style.maxHeight = currentPanel.scrollHeight + 'px';
-
-                setTimeout(() => {
-                    const panelTop = currentPanel.getBoundingClientRect().top + window.scrollY;
-                    const scrollPosition = panelTop - (window.innerHeight / 2) + 160;
-
-                    window.scrollTo({
-                        top: scrollPosition,
-                        behavior: 'smooth'
-                    });
-                }, 310);
             }
+
+            button.addEventListener('click', () => {
+                const isActive = button.classList.contains('active');
+
+                faqButtons.forEach(groupButton => {
+                    const groupPanel = groupButton.parentElement.querySelector('[data-faq-panel]');
+
+                    groupButton.classList.remove('active');
+                    groupPanel.classList.remove('active');
+                    groupPanel.style.maxHeight = null;
+                });
+
+                if (!isActive) {
+                    button.classList.add('active');
+                    currentPanel.classList.add('active');
+                    currentPanel.style.maxHeight = currentPanel.scrollHeight + 'px';
+
+                    setTimeout(() => {
+                        const panelTop = currentPanel.getBoundingClientRect().top + window.scrollY;
+                        const scrollPosition = panelTop - (window.innerHeight / 2) + 160;
+
+                        window.scrollTo({
+                            top: scrollPosition,
+                            behavior: 'smooth'
+                        });
+                    }, 310);
+                }
+            });
         });
     });
-});
+}
 
 // Modal
 
@@ -270,7 +272,7 @@ const swiper2 = new Swiper('.universities-slider', {
     }
 });
 
-const swiper3 = new Swiper('.gallery_images .gallery-slider', {
+const swiper3 = new Swiper('.gallery-slider', {
     slidesPerGroup: 1,
     speed: 1500,
     slidesPerView: 'auto',
@@ -289,39 +291,11 @@ const swiper3 = new Swiper('.gallery_images .gallery-slider', {
         },
     },
     navigation: {
-        nextEl: '.gallery_images .gallery-slider__next',
-        prevEl: '.gallery_images .gallery-slider__prev',
+        nextEl: '.gallery-slider__next',
+        prevEl: '.gallery-slider__prev',
     },
     pagination: {
-        el: '.gallery_images .gallery-pagination',
-        clickable: true,
-    },
-});
-
-const swiper4 = new Swiper('.gallery_video .gallery-slider', {
-    slidesPerGroup: 1,
-    speed: 1500,
-    slidesPerView: 'auto',
-    centeredSlides: true,
-    initialSlide: 1,
-    autoplay: {
-        delay: 3000,
-        disableOnInteraction: true,
-    },
-    breakpoints: {
-        320: {
-            spaceBetween: 15,
-        },
-        1024: {
-            spaceBetween: 20,
-        },
-    },
-    navigation: {
-        nextEl: '.gallery_video .gallery-slider__next',
-        prevEl: '.gallery_video .gallery-slider__prev',
-    },
-    pagination: {
-        el: '.gallery_video .gallery-pagination',
+        el: '.gallery-pagination',
         clickable: true,
     },
 });
@@ -329,7 +303,7 @@ const swiper4 = new Swiper('.gallery_video .gallery-slider', {
 const reviewsCurrent = document.querySelector('[data-reviews-pagination-current]');
 const reviewsTotal = document.querySelector('[data-reviews-pagination-total]');
 
-const swiper5 = new Swiper('.reviews-slider', {
+const swiper4 = new Swiper('.reviews-slider', {
     slidesPerGroup: 1,
     speed: 1500,
     spaceBetween: 20,
