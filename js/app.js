@@ -245,10 +245,12 @@ const swiper2 = new Swiper('.universities-slider', {
     slidesPerGroup: 1,
     speed: 1500,
     spaceBetween: 20,
+
     navigation: {
         nextEl: '.universities-controls__next',
         prevEl: '.universities-controls__prev',
     },
+
     breakpoints: {
         320: {
             slidesPerView: 1,
@@ -260,17 +262,39 @@ const swiper2 = new Swiper('.universities-slider', {
             slidesPerView: 3,
         },
     },
+
     on: {
         init: function () {
-            universitiesCurrent.textContent = String(this.realIndex + 1).padStart(2, '0');
-            universitiesTotal.textContent = String(this.slides.length).padStart(2, '0');
+            updateUniversitiesPagination(this);
         },
 
         slideChange: function () {
-            universitiesCurrent.textContent = String(this.realIndex + 1).padStart(2, '0');
+            updateUniversitiesPagination(this);
+        },
+
+        breakpoint: function () {
+            updateUniversitiesPagination(this);
         }
     }
 });
+
+function updateUniversitiesPagination(swiper) {
+    const start = swiper.realIndex + 1;
+    const slidesPerView = swiper.params.slidesPerView;
+    const end = Math.min(
+        start + slidesPerView - 1,
+        swiper.slides.length
+    );
+
+    if (slidesPerView === 1) {
+        universitiesCurrent.textContent = String(start).padStart(2, '0');
+    } else {
+        universitiesCurrent.textContent =
+            `${String(start).padStart(2, '0')}–${String(end).padStart(2, '0')}`;
+    }
+
+    universitiesTotal.textContent = String(swiper.slides.length).padStart(2, '0');
+}
 
 const swiper3 = new Swiper('.gallery-slider', {
     slidesPerGroup: 1,
@@ -307,10 +331,12 @@ const swiper4 = new Swiper('.reviews-slider', {
     slidesPerGroup: 1,
     speed: 1500,
     spaceBetween: 20,
+
     navigation: {
         nextEl: '.reviews-controls__next',
         prevEl: '.reviews-controls__prev',
     },
+
     breakpoints: {
         320: {
             slidesPerView: 1,
@@ -322,17 +348,39 @@ const swiper4 = new Swiper('.reviews-slider', {
             slidesPerView: 3,
         },
     },
+
     on: {
         init: function () {
-            reviewsCurrent.textContent = String(this.realIndex + 1).padStart(2, '0');
-            reviewsTotal.textContent = String(this.slides.length).padStart(2, '0');
+            updateReviewsPagination(this);
         },
 
         slideChange: function () {
-            reviewsCurrent.textContent = String(this.realIndex + 1).padStart(2, '0');
+            updateReviewsPagination(this);
+        },
+
+        breakpoint: function () {
+            updateReviewsPagination(this);
         }
     }
 });
+
+function updateReviewsPagination(swiper) {
+    const start = swiper.realIndex + 1;
+    const slidesPerView = swiper.params.slidesPerView;
+    const end = Math.min(
+        start + slidesPerView - 1,
+        swiper.slides.length
+    );
+
+    if (slidesPerView === 1) {
+        reviewsCurrent.textContent = String(start).padStart(2, '0');
+    } else {
+        reviewsCurrent.textContent =
+            `${String(start).padStart(2, '0')}–${String(end).padStart(2, '0')}`;
+    }
+
+    reviewsTotal.textContent = String(swiper.slides.length).padStart(2, '0');
+}
 
 
 // Fancybox
